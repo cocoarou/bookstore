@@ -8,5 +8,5 @@ import it.key2.formazione.bookstore.entities.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    
+    User findByUsername(String username);
 }

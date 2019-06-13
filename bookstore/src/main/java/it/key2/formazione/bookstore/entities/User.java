@@ -10,8 +10,12 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import it.key2.formazione.bookstore.annotations.PasswordMatches;
+import it.key2.formazione.bookstore.annotations.ValidUsername;
+
 @Entity
 @Table(name = "user")
+@PasswordMatches
 public class User {
 
     @Id
@@ -20,6 +24,7 @@ public class User {
     private Integer id;
 
     @Column(name = "username")
+    @ValidUsername
     private String username;
 
     @Column(name = "password")
@@ -37,12 +42,12 @@ public class User {
     public User() {}
 
     public User(Integer id, String username, String password, String firstname, String lastname, List<Book> books) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.books = books;
+        setId(id);
+        setUsername(username);
+        setPassword(password);
+        setFirstname(firstname);
+        setLastname(lastname);
+        setBooks(books);
     }
 
     public Integer getId() {
