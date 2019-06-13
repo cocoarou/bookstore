@@ -9,7 +9,6 @@ import javax.validation.ConstraintValidatorContext;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import it.key2.formazione.bookstore.annotations.ValidUsername;
-import it.key2.formazione.bookstore.entities.User;
 import it.key2.formazione.bookstore.repositories.UserRepository;
 
 /**
@@ -30,13 +29,7 @@ public class UsernameValidator implements ConstraintValidator<ValidUsername, Str
 
     @Override
     public boolean isValid(String username, ConstraintValidatorContext context) {
-        Boolean valid = true;
-        for (User u : userRepository.findAll()) {
-            if (u.getUsername().equals(username)) {
-                valid = false;
-            }
-        }
-        return valid && validateUsername(username);
+        return !userRepository.findByUsername(username).isPresent() && validateUsername(username);
     }
 
     private boolean validateUsername(String username) {
