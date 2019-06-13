@@ -8,5 +8,7 @@ import it.key2.formazione.bookstore.entities.Author;
 @Repository
 public interface AuthorRepository extends JpaRepository<Author, Integer> {
 
+	Author findByFirstname(String firstname);
+
     
 }
