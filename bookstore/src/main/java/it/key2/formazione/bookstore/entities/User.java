@@ -49,6 +49,7 @@ public class User {
         setBooks(books);
     }
 
+
     public User(Integer id, String username, String password, String firstname, String lastname, List<Book> books) {
         setId(id);
         setUsername(username);
