@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import it.key2.formazione.bookstore.entities.User;
 import it.key2.formazione.bookstore.repositories.AuthorRepository;
 import it.key2.formazione.bookstore.repositories.BookRepository;
 import it.key2.formazione.bookstore.repositories.GenreRepository;
@@ -62,10 +63,10 @@ public class DemoApplicationTests {
 		assertThat(urepo.findAll().isEmpty());
 	}
 	
+
 	@Test
-	@DisplayName("asserThat Tabels are not empty")
-	public void test_notEmptyTables() {
-		
+	public void test_saveUser() {
+		urepo.save(new User("mario.rossi", "password", "Mario", "Rossi", null));
 	}
 
 

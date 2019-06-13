@@ -19,7 +19,7 @@ import it.key2.formazione.bookstore.annotations.ValidUsername;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
@@ -40,6 +40,14 @@ public class User {
     private List<Book> books;
     
     public User() {}
+    
+    public User(String username, String password, String firstname, String lastname, List<Book> books) {
+        setUsername(username);
+        setPassword(password);
+        setFirstname(firstname);
+        setLastname(lastname);
+        setBooks(books);
+    }
 
     public User(Integer id, String username, String password, String firstname, String lastname, List<Book> books) {
         setId(id);
