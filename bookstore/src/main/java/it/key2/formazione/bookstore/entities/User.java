@@ -41,6 +41,14 @@ public class User {
     
     public User() {}
 
+    public User(String username, String password, String firstname, String lastname, List<Book> books) {
+        setUsername(username);
+        setPassword(password);
+        setFirstname(firstname);
+        setLastname(lastname);
+        setBooks(books);
+    }
+
     public User(Integer id, String username, String password, String firstname, String lastname, List<Book> books) {
         setId(id);
         setUsername(username);
