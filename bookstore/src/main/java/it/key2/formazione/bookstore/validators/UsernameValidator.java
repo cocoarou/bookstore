@@ -29,7 +29,10 @@ public class UsernameValidator implements ConstraintValidator<ValidUsername, Str
 
     @Override
     public boolean isValid(String username, ConstraintValidatorContext context) {
-        return !userRepository.findByUsername(username).isPresent() && validateUsername(username);
+    	
+    	boolean b1 = !userRepository.findByUsername(username).isPresent();
+    	boolean b2 = validateUsername(username);
+        return b1 && b2;
     }
 
     private boolean validateUsername(String username) {

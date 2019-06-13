@@ -4,9 +4,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertNull;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -34,10 +37,23 @@ public class DemoApplicationTests {
 	@Autowired
 	private PublisherRepository prepo;
 	
-	@Autowired
+	@Mock
 	private UserRepository urepo;
 	
+	@Mock
+	private User user;
 	
+	
+	@Before
+	public void setupMock() {
+		MockitoAnnotations.initMocks(this);
+	}
+	
+	@Test
+	public void testMockCreation() {
+		assertNotNull(urepo);
+		assertNotNull(user);
+	}
 
 	@Test
 	@DisplayName("assertNull Examples")

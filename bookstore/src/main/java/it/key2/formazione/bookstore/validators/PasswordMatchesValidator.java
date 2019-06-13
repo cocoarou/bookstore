@@ -11,7 +11,6 @@ import it.key2.formazione.bookstore.repositories.UserRepository;
 import it.key2.formazione.bookstore.utils.EncryptUtils;
 
 
-
 /**
  * PasswordMatchesValidator
  */
