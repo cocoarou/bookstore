@@ -83,7 +83,10 @@ public class DemoApplicationTests {
 	@Test
 	public void test_saveUser() {
 		urepo.save(new User("mario.rossi", "password", "Mario", "Rossi", null));
+		System.out.println(urepo.findByUsername("mario.rossi").get().getPassword());
 	}
+	
+
 
 
 }
