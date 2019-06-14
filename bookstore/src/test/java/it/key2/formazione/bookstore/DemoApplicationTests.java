@@ -4,13 +4,17 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertNull;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import it.key2.formazione.bookstore.entities.User;
 import it.key2.formazione.bookstore.repositories.AuthorRepository;
 import it.key2.formazione.bookstore.repositories.BookRepository;
 import it.key2.formazione.bookstore.repositories.GenreRepository;
@@ -33,10 +37,23 @@ public class DemoApplicationTests {
 	@Autowired
 	private PublisherRepository prepo;
 	
-	@Autowired
+	@Mock
 	private UserRepository urepo;
 	
+	@Mock
+	private User user;
 	
+	
+	@Before
+	public void setupMock() {
+		MockitoAnnotations.initMocks(this);
+	}
+	
+	@Test
+	public void testMockCreation() {
+		assertNotNull(urepo);
+		assertNotNull(user);
+	}
 
 	@Test
 	@DisplayName("assertNull Examples")
@@ -62,11 +79,14 @@ public class DemoApplicationTests {
 		assertThat(urepo.findAll().isEmpty());
 	}
 	
+
 	@Test
-	@DisplayName("asserThat Tabels are not empty")
-	public void test_notEmptyTables() {
-		
+	public void test_saveUser() {
+		urepo.save(new User("mario.rossi", "password", "Mario", "Rossi", null));
+		System.out.println(urepo.findByUsername("mario.rossi").get().getPassword());
 	}
+	
+
 
 
 }

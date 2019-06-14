@@ -10,21 +10,18 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import it.key2.formazione.bookstore.annotations.PasswordMatches;
 import it.key2.formazione.bookstore.annotations.ValidUsername;
 
 @Entity
 @Table(name = "user")
-@PasswordMatches
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
     @Column(name = "username")
-    @ValidUsername
     private String username;
 
     @Column(name = "password")
@@ -40,7 +37,7 @@ public class User {
     private List<Book> books;
     
     public User() {}
-
+    
     public User(String username, String password, String firstname, String lastname, List<Book> books) {
         setUsername(username);
         setPassword(password);
@@ -48,6 +45,7 @@ public class User {
         setLastname(lastname);
         setBooks(books);
     }
+
 
     public User(Integer id, String username, String password, String firstname, String lastname, List<Book> books) {
         setId(id);
