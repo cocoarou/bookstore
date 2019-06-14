@@ -21,7 +21,8 @@ public class UserServiceImpl implements UserService {
     EncryptUtils encryptUtils;
 
     @Override
-    public User save(User user) {
+    public User save(User user) 
+    {
         if (userRepository.findByUsername(user.getUsername()).isPresent()) {
             user.setId(userRepository.findByUsername(user.getUsername()).get().getId());
         }
