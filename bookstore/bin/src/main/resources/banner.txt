@@ -1,0 +1,10 @@
+${Ansi.BLUE}       ___         _      ___      
+${Ansi.BLUE}      /\_ \      /' \    /\_ \     
+${Ansi.BLUE}      \//\ \    /\_, \   \//\ \    
+${Ansi.BLUE}        \ \ \   \/_/\ \    \ \ \   
+${Ansi.BLUE}         \_\ \_    \ \ \    \_\ \_ 
+${Ansi.BLUE}         /\____\    \ \_\   /\____\
+${Ansi.BLUE}         \/____/     \/_/   \/____/
+                                                                                                           
+                                                                                                           
+${Ansi.BLUE} :: Spring Boot${spring-boot.formatted-version} :: ${Ansi.DEFAULT}																										   																										  
