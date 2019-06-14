@@ -1,7 +1,5 @@
 package it.key2.formazione.bookstore.validators;
 
-import java.util.Optional;
-
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 

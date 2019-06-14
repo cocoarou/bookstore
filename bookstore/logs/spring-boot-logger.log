@@ -693,3 +693,66 @@ Using generated security password: 73c7cf32-0d01-4ccf-88d8-f7fefbe82c6d
 2019-06-14 10:27:30,692 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 12.877 seconds (JVM running for 13.498)
 2019-06-14 10:27:30,753 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [main] HHH000397: Using ASTQueryTranslatorFactory
 2019-06-14 10:27:31,147 INFO it.key2.formazione.bookstore.DemoApplication [main] true
+2019-06-14 11:31:50,677 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on Portatile-HP with PID 6692 (C:\Users\Manuel\Desktop\WORKSPACES\sts\bookstore\bookstore\target\classes started by Manuel in C:\Users\Manuel\Desktop\WORKSPACES\sts\bookstore\bookstore)
+2019-06-14 11:31:50,689 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-14 11:31:52,487 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-14 11:31:52,687 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 183ms. Found 5 repository interfaces.
+2019-06-14 11:31:53,646 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbb923c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-14 11:31:54,353 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-06-14 11:31:54,398 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-14 11:31:54,432 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-06-14 11:31:54,437 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-14 11:31:54,852 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-06-14 11:31:54,853 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4014 ms
+2019-06-14 11:31:55,375 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-06-14 11:31:56,672 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-06-14 11:31:56,978 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-14 11:31:57,178 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2019-06-14 11:31:57,186 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-06-14 11:31:57,718 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-14 11:31:58,259 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-14 11:32:00,485 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-14 11:32:01,875 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-14 11:32:01,987 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-14 11:32:02,742 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 8ab63d04-af97-4fe7-8a48-a9b9d79d2e1d
+
+2019-06-14 11:32:03,055 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3568ea59, org.springframework.security.web.context.SecurityContextPersistenceFilter@17003497, org.springframework.security.web.header.HeaderWriterFilter@7b79ff1c, org.springframework.security.web.csrf.CsrfFilter@17136390, org.springframework.security.web.authentication.logout.LogoutFilter@51f34185, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@75f4d8a8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2c08c787, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9f2376f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63c84d31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@376498da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7856f41a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@173b1af1, org.springframework.security.web.session.SessionManagementFilter@194037f9, org.springframework.security.web.access.ExceptionTranslationFilter@246de37e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d800a56]
+2019-06-14 11:32:03,253 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-06-14 11:32:03,307 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-14 11:32:03,317 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 13.487 seconds (JVM running for 14.202)
+2019-06-14 11:33:47,500 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on Portatile-HP with PID 13456 (C:\Users\Manuel\Desktop\WORKSPACES\sts\bookstore\bookstore\target\classes started by Manuel in C:\Users\Manuel\Desktop\WORKSPACES\sts\bookstore\bookstore)
+2019-06-14 11:33:47,506 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-14 11:33:49,369 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-14 11:33:49,596 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 208ms. Found 5 repository interfaces.
+2019-06-14 11:33:50,549 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b3c82822] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-14 11:33:51,346 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-06-14 11:33:51,371 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-14 11:33:51,391 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-06-14 11:33:51,394 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-14 11:33:51,786 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-06-14 11:33:51,787 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4169 ms
+2019-06-14 11:33:52,388 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-06-14 11:33:53,556 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-06-14 11:33:53,841 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-06-14 11:33:54,028 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2019-06-14 11:33:54,038 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-06-14 11:33:54,513 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-14 11:33:54,891 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-06-14 11:33:57,013 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-14 11:33:58,834 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-14 11:33:58,999 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-14 11:33:59,698 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: b61aa340-bdd0-4c3b-9542-ed03d7083eb0
+
+2019-06-14 11:34:00,055 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@359865a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@71b3ba5a, org.springframework.security.web.header.HeaderWriterFilter@39a8e2fa, org.springframework.security.web.csrf.CsrfFilter@21a9f95b, org.springframework.security.web.authentication.logout.LogoutFilter@3fd33f48, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@797f97e3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e49437, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d9bb69b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@9f2376f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a047bdb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51f34185, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25d0b918, org.springframework.security.web.session.SessionManagementFilter@1c43df76, org.springframework.security.web.access.ExceptionTranslationFilter@2f038d3c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e794f53]
+2019-06-14 11:34:00,282 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-06-14 11:34:00,362 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-14 11:34:00,368 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 13.703 seconds (JVM running for 14.468)
+2019-06-14 11:34:00,457 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [main] HHH000397: Using ASTQueryTranslatorFactory
