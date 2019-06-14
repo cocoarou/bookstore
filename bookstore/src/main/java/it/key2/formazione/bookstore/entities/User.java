@@ -10,6 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+<<<<<<< HEAD
+import it.key2.formazione.bookstore.annotations.ValidUsername;
+=======
+>>>>>>> testSecurity
 
 @Entity
 @Table(name = "user")

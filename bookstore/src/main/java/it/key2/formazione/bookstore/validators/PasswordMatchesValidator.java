@@ -1,7 +1,10 @@
 package it.key2.formazione.bookstore.validators;
 
+<<<<<<< HEAD
+=======
 import java.util.Optional;
 
+>>>>>>> testSecurity
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
