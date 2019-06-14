@@ -30,6 +30,7 @@ public class DemoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 //		uservice.save(new User("mario.bianchi","password", "Mario", "Bianchi", null));
+	log.info("done");
 
 
 	}
