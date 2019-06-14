@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DemoApplication",
+            "request": "launch",
+            "mainClass": "it.key2.formazione.bookstore.DemoApplication",
+            "projectName": "bookstore"
+        }
+    ]
+}
