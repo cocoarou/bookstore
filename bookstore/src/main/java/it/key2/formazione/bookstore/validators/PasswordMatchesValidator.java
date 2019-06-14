@@ -1,7 +1,10 @@
 package it.key2.formazione.bookstore.validators;
 
+<<<<<<< HEAD
+=======
 import java.util.Optional;
 
+>>>>>>> testSecurity
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
@@ -31,19 +34,9 @@ public class PasswordMatchesValidator implements ConstraintValidator<PasswordMat
     @Override
     public boolean isValid(Object obj, ConstraintValidatorContext context) {
         User user = (User) obj; 
-<<<<<<< HEAD
-        if(userRepository.findByUsername(user.getUsername()).isPresent()) {
-            String psw = userRepository.findByUsername(user.getUsername()).get().getPassword();
-=======
-<<<<<<< HEAD
-        if(userRepository.findByUsername(user.getUsername()).isPresent()) {
-            String psw = userRepository.findByUsername(user.getUsername()).get().getPassword();
-=======
         if(userRepository.findByUsername(user.getUsername()).isPresent()){
             User userr = userRepository.findByUsername(user.getUsername()).get();
             String psw = userr.getPassword();
->>>>>>> testSecurity
->>>>>>> a955ac3b21d945a7bc498195ca767c2fdaa3329e
             return encryptUtils.matches(user.getPassword(), psw);
         } else {
             return false;
