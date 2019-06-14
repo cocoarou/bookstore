@@ -22,7 +22,6 @@ public class User {
     private Integer id;
 
     @Column(name = "username")
-    @ValidUsername
     private String username;
 
     @Column(name = "password")
