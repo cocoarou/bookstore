@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ${Ansi.BLUE}       ___         _      ___      
 ${Ansi.BLUE}      /\_ \      /' \    /\_ \     
 ${Ansi.BLUE}      \//\ \    /\_, \   \//\ \    
@@ -7,4 +8,15 @@ ${Ansi.BLUE}         /\____\    \ \_\   /\____\
 ${Ansi.BLUE}         \/____/     \/_/   \/____/
                                                                                                            
                                                                                                            
+=======
+${Ansi.BLUE}       ___         _      ___      
+${Ansi.BLUE}      /\_ \      /' \    /\_ \     
+${Ansi.BLUE}      \//\ \    /\_, \   \//\ \    
+${Ansi.BLUE}        \ \ \   \/_/\ \    \ \ \   
+${Ansi.BLUE}         \_\ \_    \ \ \    \_\ \_ 
+${Ansi.BLUE}         /\____\    \ \_\   /\____\
+${Ansi.BLUE}         \/____/     \/_/   \/____/
+                                                                                                           
+                                                                                                           
+>>>>>>> 8497670720f98b9d9dacabca51cdde7801dec0a1
 ${Ansi.BLUE} :: Spring Boot${spring-boot.formatted-version} :: ${Ansi.DEFAULT}																										   																										  
