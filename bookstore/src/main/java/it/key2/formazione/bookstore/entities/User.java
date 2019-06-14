@@ -10,7 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import it.key2.formazione.bookstore.annotations.ValidUsername;
 
 @Entity
 @Table(name = "user")
