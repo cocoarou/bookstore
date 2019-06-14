@@ -32,10 +32,8 @@ public class Book {
     @Column(name = "last_modify_date")
     private Timestamp lastModifyDate;
 
-
     @ManyToMany(mappedBy = "books")
     private List<Author> authors;
-
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
@@ -49,7 +47,22 @@ public class Book {
     @JoinColumn(name = "publisher_id", nullable = false)
     private Publisher publisher;
 
-    public Book() {}
+    public Book() {
+    }
+
+    public Book(String isbn, String title, String year, Double price, Integer copies,
+            Timestamp lastModifyDate, List<Author> authors, User user, Genre genre, Publisher publisher) {
+        this.isbn = isbn;
+        this.title = title;
+        this.year = year;
+        this.price = price;
+        this.copies = copies;
+        this.lastModifyDate = lastModifyDate;
+        this.authors = authors;
+        this.user = user;
+        this.genre = genre;
+        this.publisher = publisher;
+    }
 
     public Book(Integer id, String isbn, String title, String year, Double price, Integer copies,
             Timestamp lastModifyDate, List<Author> authors, User user, Genre genre, Publisher publisher) {

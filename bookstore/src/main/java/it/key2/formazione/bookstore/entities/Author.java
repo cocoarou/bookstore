@@ -31,6 +31,12 @@ public class Author {
 
     public Author() {}
 
+    public Author(@NotNull String firstname, @NotNull String lastname, List<Book> books) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.books = books;
+    }
+
     public Author(Integer id, @NotNull String firstname, @NotNull String lastname, List<Book> books) {
         this.id = id;
         this.firstname = firstname;
