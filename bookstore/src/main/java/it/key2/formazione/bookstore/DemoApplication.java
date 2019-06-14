@@ -1,5 +1,7 @@
 package it.key2.formazione.bookstore;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -21,7 +23,7 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		urepo.save(new User("mario.rossi", "password", "Mario", "Rossi", null));
+		urepo.save(new User("mario.rossi", "password", "Mario", "Rossi", new ArrayList<>()));
 
 	}
 

@@ -10,12 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import it.key2.formazione.bookstore.annotations.PasswordMatches;
 import it.key2.formazione.bookstore.annotations.ValidUsername;
 
 @Entity
 @Table(name = "user")
-@PasswordMatches
 public class User {
 
     @Id
@@ -24,7 +22,6 @@ public class User {
     private Integer id;
 
     @Column(name = "username")
-    @ValidUsername
     private String username;
 
     @Column(name = "password")
