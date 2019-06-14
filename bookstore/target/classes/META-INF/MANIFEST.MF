@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 Manifest-Version: 1.0
 Implementation-Title: demo
 Implementation-Version: 0.0.1-SNAPSHOT
 Build-Jdk-Spec: 1.8
 Created-By: Maven Integration for Eclipse
 
+=======
+Manifest-Version: 1.0
+Implementation-Title: demo
+Implementation-Version: 0.0.1-SNAPSHOT
+Build-Jdk-Spec: 1.8
+Created-By: Maven Integration for Eclipse
+
+>>>>>>> 58af2bff026ea9e669e5cac4ebda3b87669333f7
