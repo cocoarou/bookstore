@@ -29,7 +29,7 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-//		uservice.save(new User("mario.bianchi","password", "Mario", "Bianchi", null));
+	// uservice.save(new User("mario.bianchi","password", "Mario", "Bianchi", null));
 	log.info("done");
 
 
